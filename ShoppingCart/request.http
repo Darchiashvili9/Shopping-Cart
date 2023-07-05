@@ -1,0 +1,23 @@
+@host=https://localhost:7292/shoppingcart
+
+@user={{$randomInt 1 1000}}
+
+###
+GET {{host}}/shoppingcart/{{user}}
+
+####
+POST {{host}}/2/items
+Accept: application/json
+Content-Type: application/json
+
+[3, 4]
+
+###
+
+GET {{host}}/events?start=0&end=20
+Accept: application/json
+
+###
+GET {{host}}/products?productIds=[1,2,3,4]
+Accept: application/json
+
