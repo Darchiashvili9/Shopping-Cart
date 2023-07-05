@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "N21JPn5xt+ZlX8DjbqzJAaAn4bqwBI0Ims1/3TXTo6/G9nUSXNShUD46GrIwRHca3t0OPadkHJp9JK/RdkdVnw==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\Shopping-Cart\\ProductCatalog\\ProductCatalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
