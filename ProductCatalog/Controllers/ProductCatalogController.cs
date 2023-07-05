@@ -34,11 +34,11 @@ namespace ProductCatalog
     {
         public IEnumerable<ProductCatalogProduct> GetProductsByIds(IEnumerable<int> productIds)
         {
-            return productIds.Select(id => new ProductCatalogProduct(id, "foo" + id, "bar", new Money()));
+            return productIds.Select(id => new ProductCatalogProduct(id, "foo" + id, "bar", new Money("EUR",999)));
         }
     }
 
     public record ProductCatalogProduct(int ProductId, string ProductName, string ProductDescription, Money Price);
 
-    public record Money();
+    public record Money(string Currency, decimal Amount);
 }

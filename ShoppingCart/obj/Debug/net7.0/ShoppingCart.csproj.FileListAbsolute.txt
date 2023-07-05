@@ -1,7 +1,5 @@
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\appsettings.Development.json
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\appsettings.json
-E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\ProdCatalogService\obj\project.assets.json
-E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\ProdCatalogService\obj\ProdCatalogService.csproj.nuget.dgspec.json
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\ShoppingCart.exe
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\ShoppingCart.deps.json
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\ShoppingCart.runtimeconfig.json

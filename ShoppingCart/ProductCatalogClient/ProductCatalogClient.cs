@@ -19,7 +19,7 @@ namespace ShoppingCart.ProductCatalogClient
     {
         private readonly HttpClient client;
         private readonly ICache cache;
-        private static string productCatalogBaseUrl = @"https://localhost:7096/products";
+        private static string productCatalogBaseUrl = @"https://localhost:7097/products";
         private static string getProductPathTemplate = "?productIds=[{0}]";
 
         public ProductCatalogClient(HttpClient client, ICache cache)
