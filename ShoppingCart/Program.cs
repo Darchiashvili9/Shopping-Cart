@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+﻿using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Polly;
 using ProtoBuf.Meta;
@@ -10,8 +10,9 @@ using ShoppingCart.ShoppingCart;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+//სერილოგის იმპლემენტაცია!!!!!!!!
 var logger = new LoggerConfiguration()
-    
     .Enrich.FromLogContext()
     .WriteTo.Console()
     .CreateLogger();
