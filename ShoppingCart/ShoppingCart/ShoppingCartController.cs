@@ -10,17 +10,20 @@ namespace ShoppingCart.ShoppingCart
         private readonly IShoppingCartStore shoppingCartStore;
         private readonly IProductCatalogClient productCatalogClient;
         private readonly IEventStore eventStore;
-        public ShoppingCartController(IShoppingCartStore shoppingCartStore, IProductCatalogClient productCatalogClient, IEventStore eventStore)
+        private readonly ILogger logger;
+        public ShoppingCartController(IShoppingCartStore shoppingCartStore, IProductCatalogClient productCatalogClient, IEventStore eventStore, ILogger logger)
         {
             this.shoppingCartStore = shoppingCartStore;
             this.productCatalogClient = productCatalogClient;
             this.eventStore = eventStore;
+            this.logger = logger;
         }
 
         [HttpGet("{userId:int}")]
         public async Task<ShoppingCart> Get(int userId)
         {
             var data = await this.shoppingCartStore.Get(userId);
+
             return data;
         }
 
@@ -32,6 +35,9 @@ namespace ShoppingCart.ShoppingCart
             shoppingCart.AddItems(shoppingCartItems, eventStore);
 
             await this.shoppingCartStore.Save(shoppingCart);
+
+            //serilog აქ ვლოგავთ მარტივად!!!!!!!!!!!
+            this.logger.LogInformation("Successfully added products to shopping cart {@productIds},{ @shoppingCart}", productIds, shoppingCart);
 
             return shoppingCart;
         }

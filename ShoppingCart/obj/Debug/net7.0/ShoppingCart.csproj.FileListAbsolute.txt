@@ -50,3 +50,4 @@ E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.ColoredCon
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.Console.dll
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.File.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Enrichers.Span.dll

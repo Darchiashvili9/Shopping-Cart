@@ -3,6 +3,8 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Polly;
 using ProtoBuf.Meta;
 using Serilog;
+using Serilog.Enrichers.Span;
+using Serilog.Formatting.Json;
 using ShoppingCart;
 using ShoppingCart.EventFeed;
 using ShoppingCart.ProductCatalogClient;
@@ -14,7 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 //სერილოგის იმპლემენტაცია!!!!!!!!
 var logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
-    .WriteTo.Console()
+    .Enrich.WithSpan()
+    .WriteTo.Console(outputTemplate: @"{Timestamp:yyyy-MM-dd HH:mm:ss}{TraceId} {Level:u3} {Message}{NewLine}{Exception}")
     .CreateLogger();
 builder.Logging.AddSerilog(logger);
 
