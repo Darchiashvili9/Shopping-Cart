@@ -2,12 +2,20 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Polly;
 using ProtoBuf.Meta;
+using Serilog;
 using ShoppingCart;
 using ShoppingCart.EventFeed;
 using ShoppingCart.ProductCatalogClient;
 using ShoppingCart.ShoppingCart;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var logger = new LoggerConfiguration()
+    
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .CreateLogger();
+builder.Logging.AddSerilog(logger);
 
 
 builder.Services
@@ -30,6 +38,8 @@ builder.Services.AddScoped<ICache, Cache>();
 
 var app = builder.Build();
 
+
+
 app.UseHttpsRedirection();
 
 
@@ -44,7 +54,6 @@ app.UseHealthChecks("/health/live",
     {
         Predicate = x => x.Tags.Contains("liveness")
     });
-
 
 
 

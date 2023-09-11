@@ -39,3 +39,14 @@ E:\Projects\Shopping-Cart\ShoppingCart\obj\Debug\net7.0\refint\ShoppingCart.dll
 E:\Projects\Shopping-Cart\ShoppingCart\obj\Debug\net7.0\ShoppingCart.pdb
 E:\Projects\Shopping-Cart\ShoppingCart\obj\Debug\net7.0\ShoppingCart.genruntimeconfig.cache
 E:\Projects\Shopping-Cart\ShoppingCart\obj\Debug\net7.0\ref\ShoppingCart.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.ColoredConsole.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\Projects\Shopping-Cart\ShoppingCart\bin\Debug\net7.0\Serilog.Sinks.File.dll
